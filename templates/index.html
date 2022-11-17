@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Namada Foundation</title>
+        <link rel="stylesheet" href="../css/style.css"
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Banner -->
+        <section id="banner">
+            <img src="../images/logon.png" class="logo">
+            <div class="banner-text">
+                <h1>Namada Foundation</h1>
+                <p>Care and Share</p>
+                <div class="banner-btn">
+                    <a href="#"><span></span> About us</a>
+                    <a href="#"><span></span> Read more</a>
+                </div>
+            </div>
+        </section>
+        <!-- End Banner -->
+
+        <!-- Side Nav -->
+        <div id="side-nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">What we do</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Menu button -->
+        <div id="menu-btn">
+            <img src="../images/menu.png" id="menu">
+        </div>
+        <!-- End Side Nav -->
+
+
+        <script>
+            var menuBtn = document.getElementById("menu-btn");
+            var sideNav = document.getElementById("side-nav");
+            var menu = document.getElementById("menu");
+
+            sideNav.style.right == "-200px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-200px"){
+                    sideNav.style.right = "0";
+                    menu.src = "../images/close.png";
+                } else{
+                    sideNav.style.right = "-200px";
+                    menu.src = "../images/menu.png";
+                }
+            }
+        </script>
+    </body>
+</html>
