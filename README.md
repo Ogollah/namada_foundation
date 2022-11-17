@@ -1,2 +1,2 @@
-# namanda_foundation
+# namada_foundation
 Foundation
