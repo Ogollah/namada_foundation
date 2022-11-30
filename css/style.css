@@ -404,3 +404,23 @@ hr{
 .user-info h3{
     color: #009688;
 }
+
+.testimonial-col:hover{
+    transform: translateY(-7px);
+}
+
+@media screen and (max-width:770px){
+    .testimonial-col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* End Testimonial */
+
+/* Footer */
+
+#footer{
+    padding: 100px 0 20px;
+    background-color: #efefef;
+}
